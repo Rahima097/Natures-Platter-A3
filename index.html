@@ -1,18 +1,85 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natures's Platter</title>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-        @theme {
-          --color-primary: #179800;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natures's Platter</title>
+  <!-- font family link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <!-- font awesome cdn -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- tailwind and daisyUI cdn link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .font-sora{
+      font-family: "Sora", serif;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'nature-primary': '#179800',
+            'nature-secondary': '#111111',
+            'bg-nature-primary': 'EFEBE3',
+          }
         }
-      </style>
+      }
+    }
+  </script>
 
 </head>
-<body>
-    
+
+<body class="font-sora">
+  <header>
+    <!-- nav section start -->
+    <nav class="container mx-auto">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start ">
+          <img class="visible sm:invisible" src="assets/logo-mobile.png.png" alt="">
+          <img class="invisible sm:visible" src="assets/logo-header.png" alt="">
+        </div>
+        <div class="invisible lg:visible navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="text-xl bg-white hover:text-nature-primary hover:underline"><a class="hover:bg-white">Product</a></li>
+            <li class="text-xl bg-white hover:text-nature-primary hover:underline"><a class="hover:bg-white">Services</a></li>
+            <li class="text-xl bg-white hover:text-nature-primary hover:underline"><a class="hover:bg-white">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end space-x-3">
+          <i class="fa-solid fa-magnifying-glass invisible lg:visible"></i>
+          <i class="fa-solid fa-cart-shopping invisible lg:visible"></i>
+          <a class="btn text-xl border-nature-primary bg-white text-nature-secondary hover:bg-nature-primary hover:text-white font-normal px-7 py-2 invisible lg:visible">login</a>
+          <a class="btn text-xl font-normal text-white bg-nature-primary border-nature-primary hover:bg-white hover:text-nature-secondary hover:border-nature-primary px-7 py-2  invisible lg:visible">Register</a>
+          <div class="dropdown visible lg:invisible">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Product</a></li>
+              <li><a>Services</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- nav section end -->
+  <main>
+
+  </main>
+  <footer>
+
+  </footer>
 </body>
+
 </html>
