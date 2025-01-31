@@ -26,7 +26,7 @@
           colors: {
             'nature-primary': '#179800',
             'nature-secondary': '#111111',
-            'bg-nature-primary': 'EFEBE3',
+            'nature-bg': '#EFEBE3',
           }
         }
       }
@@ -36,29 +36,29 @@
 </head>
 
 <body class="font-sora">
-  <header>
+  <header class="w-full h-full bg-gradient-to-b from-white to-nature-bg">
     <!-- nav section start -->
-    <nav class="container mx-auto">
-      <div class="navbar bg-base-100">
-        <div class="navbar-start ">
-          <img class="visible sm:invisible" src="assets/logo-mobile.png.png" alt="">
-          <img class="invisible sm:visible" src="assets/logo-header.png" alt="">
+    <nav class=" w-full flex justify-center items-center text-center border-b border-nature-primary py-2 px-0 sm:w-11/12 sm:mx-auto sm:border-none">
+      <div class="navbar justify-center">
+        <div class="navbar-start">
+          <img class="hidden sm:block" src="assets/logo-header.png" alt="">
+          <img class="block sm:hidden" src="assets/logo-mobile.png" alt="">
         </div>
-        <div class="invisible lg:visible navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
+        <div class=" navbar-center hidden md:flex lg:flex">
+          <ul class="hidden lg:flex menu menu-horizontal px-1">
             <li class="text-xl bg-white hover:text-nature-primary hover:underline"><a class="hover:bg-white">Product</a></li>
             <li class="text-xl bg-white hover:text-nature-primary hover:underline"><a class="hover:bg-white">Services</a></li>
             <li class="text-xl bg-white hover:text-nature-primary hover:underline"><a class="hover:bg-white">Contact us</a></li>
           </ul>
         </div>
-        <div class="navbar-end space-x-3">
-          <i class="fa-solid fa-magnifying-glass invisible lg:visible"></i>
-          <i class="fa-solid fa-cart-shopping invisible lg:visible"></i>
-          <a class="btn text-xl border-nature-primary bg-white text-nature-secondary hover:bg-nature-primary hover:text-white font-normal px-7 py-2 invisible lg:visible">login</a>
-          <a class="btn text-xl font-normal text-white bg-nature-primary border-nature-primary hover:bg-white hover:text-nature-secondary hover:border-nature-primary px-7 py-2  invisible lg:visible">Register</a>
-          <div class="dropdown visible lg:invisible">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+        <div class="navbar-end justify-end lg:gap-3">
+          <i class="fa-solid fa-magnifying-glass hidden lg:block"></i>
+          <i class="fa-solid fa-cart-shopping hidden lg:block"></i>
+          <a class="btn text-xl border-nature-primary bg-white text-nature-secondary hover:bg-nature-primary hover:text-white font-normal px-7 py-2 hidden lg:block">login</a>
+          <a class="btn text-xl font-normal text-white bg-nature-primary border-nature-primary hover:bg-white hover:text-nature-secondary hover:border-nature-primary px-7 py-2  hidden lg:block">Register</a>
+          <div class="dropdown text-right block lg:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost p-0 lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
               </svg>
@@ -72,8 +72,25 @@
         </div>
       </div>
     </nav>
+    <!-- nav section end -->
+     
+    <!-- hero section start -->
+    <div class="hero w-full pt-20 pb-0 mx-0 items-end">
+      <div class="hero-content w-full flex-col text-center mx-0 pb-0">
+        <div class="max-w-4xl">
+          <h1 class="text-3xl sm:text-5xl font-bold animate-bounce">Freshness <span class="text-nature-primary">You Can <br>
+            Count</span> On, Prices You’ll Love!</h1>
+          <p class="py-6 text-base sm:text-xl">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+        </div>
+        <div class="max-w-4xl mx-0 text-end">
+          <img
+          src="assets/hero-vegetables.png"
+          class=" mx-0 animate-pulse" />
+        </div>
+      </div>
+    </div>
   </header>
-  <!-- nav section end -->
+  <!-- hero section end -->
   <main>
 
   </main>
